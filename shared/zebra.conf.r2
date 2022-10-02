@@ -1,0 +1,37 @@
+!
+! Zebra configuration saved from vty
+!   2022/10/02 10:54:54
+!
+hostname zebra
+password zebra
+enable password zebra
+log file /var/log/quagga/zebra.log
+!
+interface dummy0
+ no link-detect
+ ip address 1.122.0.2/32
+ ipv6 nd suppress-ra
+!
+interface eth0
+ no link-detect
+ ip address 2.21.0.1/31
+ ipv6 nd suppress-ra
+!
+interface eth1
+ no link-detect
+ ip address 1.122.3.7/31
+ ipv6 nd suppress-ra
+!
+interface eth2
+ no link-detect
+ ip address 1.122.3.1/31
+ ipv6 nd suppress-ra
+!
+interface lo
+ no link-detect
+!
+ip forwarding
+!
+!
+line vty
+!
