@@ -1,6 +1,6 @@
 !
 ! Zebra configuration saved from vty
-!   2022/10/02 10:55:02
+!   2022/10/02 19:47:14
 !
 hostname zebra
 password zebra
@@ -19,7 +19,7 @@ interface eth0
 !
 interface eth1
  no link-detect
- ip address 1.122.3.9/31
+ ip address 1.122.3.4/31
  ipv6 nd suppress-ra
 !
 interface eth2
